@@ -10,6 +10,7 @@ body {
   --white: #fff;
   --greyLight: #E6ECF0;
   --greyDark: #AAB8C2;
+  --green: #4A913C;
 }
 
 h1,h2,h3,h4,h5,p {
@@ -19,6 +20,10 @@ h1,h2,h3,h4,h5,p {
 button, input {
   font-family: 'Poppins', sans-serif;
   outline: 0;
+}
+
+li {
+  list-style: none;
 }
 
 * {
