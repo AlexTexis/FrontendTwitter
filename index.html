@@ -51,9 +51,17 @@
         <h2>Descubre lo que está pasando en el mundo en este momento</h2>
         <h3>Únete hoy a Twitter.</h3>
         <button>Registrate</button>
-        <button>Iniciar Sesion</button>
+        <button id='btn__session'>Iniciar Sesion</button>
       </div>  
     </section>
   </div>
+  <script>
+    window.addEventListener('load', () => {
+      const btnSession = document.getElementById('btn__session');
+      btnSession.onclick = function(event) {
+        window.location.href = 'profile.html'
+      };
+    });
+  </script>
 </body>
 </html>

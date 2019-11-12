@@ -1,0 +1,72 @@
+.publications__contentPublications {
+  background-color: var(--white);
+}
+.publication__head {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid var(--greyLight);
+  padding: 0 15px;
+}
+.publications__timeline ul {
+  padding: 0;
+  margin: 0;
+}
+.publication__container {
+  border-bottom: 1px solid var(--greyLight);
+}
+.publication__item {
+  display: flex;
+  padding: 5px 0;
+}
+.publication__item figure {
+  margin: 0;
+  flex-shrink: 0;
+  width: 60px;
+}
+.publication__item figure > img {
+  width: 48px;
+  display: block;
+  margin:0 auto;
+}
+.publication__content {
+  padding-right: 10px;
+}
+.publication__description {
+  margin-bottom: 10px;
+}
+.publication__nameOwner {
+  display: flex;
+  align-items: center;
+}
+.publication__description h3 {
+  font-size: 1em;
+  margin-right: 5px;
+}
+.publication__description p {
+  font-size: .85em;
+  margin-bottom: 10px;
+}
+.publication__description figure {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 2px 0 var(--greyDark);
+}
+.publication__description figure > img {
+ width: 100%;
+}
+.publication__actionsList {
+  display: flex;
+}
+.publication__action {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 40px;
+  color: #797482;
+}
+.publication__action svg {
+  width: 20px;
+  margin-right: 10px;
+}
