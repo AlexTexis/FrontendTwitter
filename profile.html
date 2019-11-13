@@ -256,11 +256,13 @@
       }
 
       function scrollHandle(event) {
-        const positionScrollY = event.path[1].scrollY;
-        if (positionScrollY > 356) {
-          if (!mediaQueryList.matches) addStylesAndClass();
-        } else {
-          resetStylesAndClass();
+        if (event.path) {
+          const positionScrollY = event.path[1].scrollY;
+          if (positionScrollY > 356) {
+            if (!mediaQueryList.matches) addStylesAndClass();
+          } else {
+            resetStylesAndClass();
+          }
         }
       }
 
