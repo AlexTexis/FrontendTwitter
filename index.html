@@ -32,7 +32,7 @@
       >
     </section>
     <section class='login__columnRight'>
-      <form class='login__form'>
+      <form class='login__form' id='form'>
         <div class='login_userBox'>
           <input type='text' placeholder='Telefono,correo electronico o nombre de usuario'>
         </div>
@@ -40,7 +40,7 @@
           <input type='password' placeholder='Contraseña'>
           <span>¿Olvidaste tu contraseña?</span>
         </div>
-        <button>Inica Sesion</button>
+        <button id='btnSession_main'>Inica Sesion</button>
       </form>
       <div class='login__contentColumnRight'>
         <img  
@@ -57,9 +57,20 @@
   </div>
   <script>
     window.addEventListener('load', () => {
+      const btnSessionMain = document.getElementById('btnSession_main');
       const btnSession = document.getElementById('btn__session');
+      const form = document.getElementById('form');
+
+      form.onsubmit = function(event) {
+        event.preventDefault();
+      };
+
+      btnSessionMain.onclick = function(event) {
+        window.location.href = 'home.html';
+      };
+
       btnSession.onclick = function(event) {
-        window.location.href = 'profile.html'
+        window.location.href = 'home.html';
       };
     });
   </script>
