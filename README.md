@@ -5,7 +5,7 @@ Solution of challenge ¡Gánate la caja sorpresa! in platzi.
 
 **LOGIN**
 
-https://frontendtwitter-alex.now.sh/index.html
+https://frontendtwitter-alex.now.sh/
 
 **HOME**
 
