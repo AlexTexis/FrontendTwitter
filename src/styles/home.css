@@ -15,6 +15,11 @@
 .home__navbar {
   position: fixed;
   width: 235px;
+  height: inherit;
+}
+.home__navbarContainer {
+  height: inherit;
+  overflow: auto;
 }
 .home__navbar figure {
   padding: 0;
@@ -47,6 +52,87 @@
 }
 .home__navbarContent ul li a:hover > svg {
   fill: var(--blue);
+}
+.navbar__dropwdownMore {
+  position: fixed;
+  width: 230px;
+  top: 0;
+  left: auto;
+  background-color:  var(--white);
+  box-shadow: 0 1px 10px -3px rgba(0,0,0,.3);
+  border-radius: 8px;
+  z-index: 1;
+  display: none;
+}
+.navbar__dropwdownMore.active {
+  display: block;
+}
+.navbar__dropwdownMore ul{
+  border-bottom: 1px solid var(--greyLight);
+  padding: 0;
+  margin: 0;
+}
+.navbar__dropwdownMore ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+.navbar__dropwdownMore ul li:hover {
+  background-color: #F5F8FA;
+}
+.navbar__dropwdownMore ul li a {
+  color: #14171A;
+  font-size: .9em;
+  text-decoration: none;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 0;
+}
+.navbar__dropdownHeadMore {
+  height: 110px;
+  padding: 5px 10px;
+  border-bottom: 1px solid var(--greyLight);
+}
+.navbar__dropdownHeadMore div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__dropdownHeadMore div:first-child figure {
+  padding: 0;
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.navbar__dropdownHeadMore div:first-child figure img {
+  width: 100%;
+  vertical-align: middle;
+}
+.navbar__dropdownHeadMore div:first-child svg {
+  width: 30px;
+  fill: var(--blue);
+}
+.navbar__dropdownHeadMore div:last-child  {
+ padding: 5px 10px;
+ line-height: 20px;
+}
+.navbar__dropdownHeadMore div:last-child h3 {
+ font-size: 1em;
+}
+.navbar__dropdownHeadMore div:last-child span {
+ font-size: .9em;
+ color: #8896A2;
+}
+.navbar__dropwdownMore ul li{
+  display: flex;
+  align-items: center;
+}
+.navbar__dropwdownMore ul li > svg {
+  width: 19px;
+  flex-shrink: 0;
+  margin-right: 10px;
+  fill: #14171A;
 }
 .home__navbarContent ul a {
   text-decoration: none;
