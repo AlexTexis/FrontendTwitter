@@ -106,6 +106,7 @@
   margin-bottom: 20px;
   border-radius: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
 .login__contentColumnRight button:nth-of-type(1) {
   background-color: var(--blue);

@@ -13,20 +13,26 @@
 }
 .publication__container {
   border-bottom: 1px solid var(--greyLight);
+  cursor: pointer;
+}
+.publication__container:hover {
+  background-color: #F5F8FA;
 }
 .publication__item {
   display: flex;
   padding: 5px 0;
 }
-.publication__item figure {
+.publication__item figure:first-child {
   margin: 0;
   flex-shrink: 0;
   width: 60px;
 }
-.publication__item figure > img {
+.publication__item figure:first-child > img {
   width: 48px;
   display: block;
   margin:0 auto;
+  border-radius: 50%;
+  overflow: hidden;
 }
 .publication__content {
   padding-right: 10px;
@@ -56,6 +62,7 @@
 }
 .publication__description figure > img {
  width: 100%;
+ vertical-align: middle;
 }
 .publication__actionsList {
   display: flex;
